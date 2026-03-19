@@ -1,0 +1,9 @@
+2026.03.15
+- Reverted TTC pricing back into basic loot logging as they were sharing critical inventory functions and i forgot =p
+- FIX loot logging not showing needed items in inventory if not running ttc.
+- Enhanced basic loot logging to now show the iriginal red indicator if your current toon needs OR and orangy yellow is it only only an alt.
+- Enhanced the libcharacterknowledge logic to return more detailed information such as if you need personally or alts need something or none greatly improving efficiency throughout addon.
+** POSSIBLE FUTURE OPTIONS **
+- NONE ATM
+---NEED TO FIX /ts cant port cus its closing!!
+-- get trader search and loot window showing if needed!!

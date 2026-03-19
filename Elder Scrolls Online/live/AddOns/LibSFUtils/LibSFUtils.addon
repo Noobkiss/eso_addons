@@ -1,0 +1,24 @@
+## APIVersion: 101047 101048
+## Title: LibSFUtils
+## Author: Shadowfen
+## IsLibrary: true
+## AddOnVersion: 63
+## Version: 63
+## Description: Library containing a variety of utilities used in Shadowfen's addons.
+## DependsOn: LibDebugLogger>=268
+## OptionalDependsOn: LibMsgWin-1.0>=11
+
+; Library
+LibSFUtils_Global.lua
+SFUtils_Logger.lua
+SFUtils_Color.lua
+LibSFUtils.lua
+SFUtils_Tables.lua
+SFUtils_Guild.lua
+SFUtils_SavedVariables.lua
+SFUtils_LoadLanguage.lua
+SFUtils_Sounds.lua
+SFUtils_MsgWinUtils.lua
+SFUtils_Events.lua
+
+SFUtils_VersionChecker.lua

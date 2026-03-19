@@ -1,0 +1,35 @@
+<Bindings>
+	<Layer name="SI_KEYBINDINGS_CATEGORY_GENERAL">
+		<Category name="|c6666FFRidinDirty|r">
+			<Action name="MOUNT_PLAYER">
+				<Down>RidinDirtyX.MountPlayer()</Down> 
+			</Action>
+			<Action name="TRAVEL_TO_PLAYER">
+				<Down>RidinDirtyX.TravelToPlayer()</Down>
+			</Action>
+			<Action name="TRAVEL_TO_HOME">
+				<Down>RidinDirtyX.TravelToHome()</Down>
+			</Action>
+			<Action name="ARMORY_UNLOCK">
+				<Down>RidinDirtyX.UnLockArmory()</Down>
+			</Action>
+			<Action name="TRADER_ACTIVITY">
+				<Down>RidinDirtyX.TraderActivity()</Down>
+			</Action>
+			<Action name="LEAVE_GROUP">
+				<!--<Down>GroupLeave()</Down>-->
+				<Down>RidinDirtyX.GroupLeave()</Down>
+			</Action>
+			<Action name="RELOADUI">
+				<Down>ReloadUI()</Down>
+			</Action>
+		</Category>
+	</Layer>
+	<Layer name="SI_KEYBINDINGS_LAYER_SIEGE">
+		<Category name="|c6666FFRidinDirty|r">
+			<Action name="SIEGE_CAMERA_TOGGLE">
+				<Down>RidinDirtyX.SiegeCameraToggle()</Down>
+			</Action>
+		</Category>
+	</Layer>
+</Bindings>

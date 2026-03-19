@@ -1,0 +1,28 @@
+## Title: |cFFD700Crux Counter|r
+## APIVersion: 101049
+## SavedVariables: CruxCounterData
+## Description: Got Crux?
+## Version: 1.5
+## Author: |cFFD700@g4rr3t (NA)|r, |cFFD700@Atharti (EU)|r
+## DependsOn: LibAddonMenu-2.0
+
+src/Addon.lua
+src/Debug.lua
+src/Callbacks.lua
+
+src/lang/en.lua
+src/lang/$(language).lua
+src/Language.lua
+
+src/Settings.lua
+src/Interface.lua
+src/State.lua
+src/Events.lua
+src/Init.lua
+
+src/elements/Ring.lua
+src/elements/Rune.lua
+src/elements/Orbit.lua
+src/elements/Aura.lua
+
+CruxCounter.xml

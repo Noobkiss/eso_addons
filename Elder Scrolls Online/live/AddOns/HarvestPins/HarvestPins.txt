@@ -1,0 +1,8 @@
+## Title: HarvestPins
+## Author: @Yavandiel
+## APIVersion: 100028 100029
+## AddOnVersion: 1.7
+## DependsOn: HarvestMap
+## Description: Upgrade icons for «HarvestMap» AddOn.
+
+LoadTextures.lua

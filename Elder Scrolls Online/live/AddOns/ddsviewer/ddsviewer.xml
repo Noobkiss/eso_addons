@@ -1,0 +1,95 @@
+<GuiXml>
+  <Controls>
+    <TopLevelControl name="ddsviewer_ui" clampedToScreen="true" mouseEnabled="true" movable="true" resizeHandleSize="10" hidden="true">
+      <Anchor point="TOPLEFT" offsetX="100" offsetY="100" />
+      <Dimensions x="1000" y="592" />
+      <DimensionConstraints minX="800" minY="400" />
+      <Controls>
+        <Backdrop name="$(parent)_Backdrop" inherits="ZO_DefaultBackdrop" alpha="0.65" />
+        <Button name="$(parent)_CloseButton">
+          <Anchor point="TOPRIGHT" />
+          <Dimensions x="20" y="20" />
+          <Controls>
+            <Texture name="$(parent)_Texture" textureFile="/esoui/art/buttons/decline_up.dds">
+              <AnchorFill />
+            </Texture>
+          </Controls>
+          <OnClicked>
+            ddsview:CloseWindow()
+          </OnClicked>
+        </Button>
+        <Button name="$(parent)_FadeButton">
+          <Anchor point="TOPRIGHT" relativeTo="ddsviewer_ui_CloseButton" relativePoint="TOPLEFT" />
+          <Dimensions x="20" y="20" />
+          <Controls>
+            <Texture name="$(parent)_Texture" textureFile="/esoui/art/buttons/pointsminus_up.dds">
+              <AnchorFill />
+            </Texture>
+          </Controls>
+          <OnClicked>
+            ddsview:FadeWindow()
+          </OnClicked>
+        </Button>
+        <Button name="$(parent)_RefreshButton">
+          <Anchor point="TOPRIGHT" relativeTo="ddsviewer_ui_FadeButton" relativePoint="TOPLEFT" />
+          <Dimensions x="20" y="20" />
+          <Controls>
+            <Texture name="$(parent)_Texture" textureFile="/esoui/art/ava/ava_keepstatus_icon_collectionrate.dds">
+              <AnchorFill />
+            </Texture>
+          </Controls>
+          <OnClicked>
+            ddsview:RefreshWindow()
+          </OnClicked>
+        </Button>
+        <Label name="$(parent)_HeaderLabel" font="ZoFontGame" wrapMode="TRUNCATE" horizontalAlignment="LEFT" verticalAlignment="TOP" resizeToFitDescendents="true">
+          <Anchor point="TOPLEFT" />
+        </Label>
+        <EditBox name="$(parent)_LocationEB" font="ZoFontChat" horizontalAlignment="LEFT" verticalAlignment="TOP" text="" editEnabled="true" maxInputCharacters="150" multiLine="false" newLineEnabled="false">
+          <Anchor point="TOPLEFT" relativeTo="ddsviewer_ui_HeaderLabel" relativePoint="BOTTOMLEFT" offsetY="10" />
+          <Dimensions x="800" y="30" />
+        </EditBox>
+        <TextBuffer name="$(parent)_DirListTB" font="ZoFontGame" maxHistoryLines="100" mouseEnabled="true" linkEnabled="true" splitLongMessages="false" drawLastEntryIfOutOfRoom="true" wrapMode="ELLIPSIS">
+          <Anchor point="TOPLEFT" relativeTo="ddsviewer_ui_LocationEB" relativePoint="BOTTOMLEFT" offsetY="5" />
+          <Anchor point="BOTTOMLEFT" />
+          <Dimensions x="230" />
+          <Controls>
+            <Backdrop name="$(parent)_Backdrop" inherits="ZO_ThinBackdrop" alpha="0.65" />
+          </Controls>
+          <OnMouseWheel>
+            ddsview:OnMouseWheel(self, delta, ctrl, alt, shift, command)
+          </OnMouseWheel>
+          <OnLinkClicked>
+            ddsview:OnLinkClicked(self, linkData, linkText, button, ctrl, alt, shift, command)
+          </OnLinkClicked>
+        </TextBuffer>
+        <TextBuffer name="$(parent)_FileListTB" font="ZoFontGame" maxHistoryLines="200" mouseEnabled="true" linkEnabled="true" splitLongMessages="false" drawLastEntryIfOutOfRoom="true" wrapMode="ELLIPSIS">
+          <Anchor point="TOPLEFT" relativeTo="ddsviewer_ui_DirListTB" relativePoint="TOPRIGHT" />
+          <Anchor point="BOTTOMLEFT" relativeTo="ddsviewer_ui_DirListTB" relativePoint="BOTTOMRIGHT" />
+          <Dimensions x="450" />
+          <Controls>
+            <Backdrop name="$(parent)_Backdrop" inherits="ZO_ThinBackdrop" alpha="0.65" />
+          </Controls>
+          <OnMouseWheel>
+            ddsview:OnMouseWheel(self, delta, ctrl, alt, shift, command)
+          </OnMouseWheel>
+          <OnLinkClicked>
+            ddsview:OnLinkClicked(self, linkData, linkText, button, ctrl, alt, shift, command)
+          </OnLinkClicked>
+        </TextBuffer>
+        <Texture name="$(parent)_Texture" resizeToFitFile="true" hidden="true">
+          <Anchor point="LEFT" relativeTo="ddsviewer_ui_FileListTB" relativePoint="RIGHT" offsetX="50" />
+        </Texture>
+        <Label name="$(parent)_FileInfoL" font="ZoFontGame" wrapMode="TRUNCATE" horizontalAlignment="LEFT" verticalAlignment="TOP" resizeToFitDescendents="true">
+          <Anchor point="TOPLEFT" relativeTo="ddsviewer_ui_Texture" relativePoint="BOTTOMLEFT" offsetY="10" />
+        </Label>
+      </Controls>
+      <OnMoveStop>
+        ddsview:OnMoveStop()
+      </OnMoveStop>
+      <OnResizeStop>
+        ddsview:OnResizeStop()
+      </OnResizeStop>
+    </TopLevelControl>
+  </Controls>
+</GuiXml>

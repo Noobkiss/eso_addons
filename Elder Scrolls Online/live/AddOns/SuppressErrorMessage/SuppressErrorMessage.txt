@@ -1,0 +1,6 @@
+## Title: SuppressErrorMessage
+## Author: Naeramarth
+## APIVersion: 100016
+## Version: 1.1
+
+SuppressErrorMessage.lua

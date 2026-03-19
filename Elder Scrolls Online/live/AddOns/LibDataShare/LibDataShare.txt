@@ -1,0 +1,18 @@
+; This Add-on is not created by, affiliated with or sponsored by ZeniMax
+; Media Inc. or its affiliates. The Elder Scrolls® and related logos are
+; registered trademarks or trademarks of ZeniMax Media Inc. in the United
+; States and/or other countries. All rights reserved.
+; You can read the full terms at https://account.elderscrollsonline.com/add-on-terms
+
+## Title: LibDataShare
+## Author: |cFFFF00andy.s|r, |c76c3f4@m00nyONE|r
+## Version: 2025.03.14
+## AddOnVersion: 20250314
+## APIVersion: 101044 101045
+## OptionalDependsOn: LibMapPing RaidNotifier BanditsUserInterface FoundryTacticalCombat TaosGroupTools POC LibGroupSocket
+## DependsOn: LibGroupBroadcast>=88
+## IsLibrary: true
+## Description: Deprecated Library for sharing small amounts of data between group members. Originally created for HodorReflexes. Please use LibGroupBroadcast after U45 instead of this Library.
+
+LibDataShare.lua
+Maps.lua

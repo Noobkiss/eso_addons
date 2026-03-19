@@ -1,0 +1,25 @@
+## Title: Lib|c00FF00ExoY|rsUtilities
+## APIVersion: 101044
+## Author: @|c00FF00ExoY|r94 (PC/EU)
+## Version: 8
+## AddOnVersion: 8
+## IsLibrary: true
+## DependsOn: LibCustomMenu LibAddonMenu-2.0
+
+languages/en.lua
+languages/$(language).lua
+
+modules/CombatStateManager.lua
+modules/Formatter.lua
+modules/Miscellaneous.lua
+modules/Media.lua
+modules/Fonts.lua
+modules/ChatManager.lua
+modules/EventHandler.lua
+modules/Dialogs.lua
+modules/SavedVariables.lua
+
+modules/SettingsMenu.lua
+modules/Compatibility.lua
+
+LibExoYsUtilities.lua

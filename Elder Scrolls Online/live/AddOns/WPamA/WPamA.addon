@@ -1,0 +1,25 @@
+## DisableSavedVariablesAutoSaving 0
+## Title: WPamA (What Pledges at my Alts)
+## APIVersion: 101049
+## Version: 2.6.0
+## AddOnVersion: 020600
+## Author: |c779cff@ForgottenLight|r [EU]
+## SavedVariables: WPamA_SV_Debug WPamA_SV_Main
+## DependsOn: LibAddonMenu-2.0>=41
+## OptionalDependsOn: AutoInvite
+
+WPamA.xml
+WPamAConsts.lua
+i18n\en.lua
+i18n\$(language).lua
+WPamAModes.lua
+WPamACore.lua
+WPamASettings.lua
+WPamAUI.lua
+WPamAAvA.lua
+WPamAEndeavor.lua
+WPamAWE.lua
+WPamAED.lua
+WPamAEquip.lua
+WPamA.lua
+bindings.xml

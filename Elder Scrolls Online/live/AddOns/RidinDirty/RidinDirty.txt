@@ -1,0 +1,18 @@
+;------------------------------ DISCLAIMER -----------------------------
+; This Add-on is not created by, affiliated with or sponsored by ZeniMax
+; Media Inc. or its affiliates. The Elder Scrolls® and related logos are
+; registered trademarks or trademarks of ZeniMax Media Inc. in the United
+; States and/or other countries. All rights reserved.
+; You can read the full terms at https://account.elderscrollsonline.com/add-on-terms
+
+## Title: |c6666FFRidinDirty|r
+## Description: Mount group member multi-rider mounts, teleport to saved group member or in zone guildy, groupie or friend & home via keybinds, auto banking and junk management plus MUCH more!
+## Author: @sinnereso
+## Version: 2026.03.15
+## APIVersion: 101049
+## DependsOn: LibAddonMenu-2.0>=41 LibCustomMenu>=730
+## OptionalDependsOn: LibCharacterKnowledge>=202010 LibHistoire>=1101 TamrielTradeCentre
+## SavedVariables: RidinDirtyVars
+
+RidinDirty.lua
+bindings.xml

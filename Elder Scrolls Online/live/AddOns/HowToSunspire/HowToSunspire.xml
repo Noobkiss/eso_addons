@@ -1,0 +1,438 @@
+<GuiXml>
+  <Controls>
+
+    <TopLevelControl name="Hts_Ha" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="0" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_HA()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cff1493重击|r: 0.9 |cff1493/|r: 0.4">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Breath" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="0" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Breath()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cff1493吐息|r: 0.9">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Portal" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Portal()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|c7fffd4时间迁移|r: 11">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Ice" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="120" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Ice()
+      </OnMoveStop>
+      <Controls>
+
+        <Label name="$(parent)_Title" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="LEFT" text="|c00ffff冰冻墓穴 |cff00001|r |c00ffff倒计时|r: 2.6">
+          <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" />
+        </Label>
+
+        <Label name="$(parent)_Label1" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="LEFT" text="|c00ffff[|cff0000A|c00ffff]: 8s">
+          <Anchor point="TOPLEFT" relativeTo="$(parent)_Title" relativePoint="BOTTOMLEFT" />
+        </Label>
+
+        <Label name="$(parent)_Label2" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="LEFT" text="|c00ffff[|cff0000B|c00ffff]: 8s">
+          <Anchor point="TOPLEFT" relativeTo="$(parent)_Label1" relativePoint="BOTTOMLEFT" />
+        </Label>
+
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Sweep" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-100" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Sweep()
+      </OnMoveStop>
+      <Controls>
+
+         <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFD700" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cffa500>|r|cff0000>|r|cffa500>|r> 扫掠吐息 |cffa500>|r|cff0000>|r|cffa500>|r>">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Laser" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Laser()
+      </OnMoveStop>
+      <Controls>
+
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|c7fffd4风暴之怒 倒计时|r: 27">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_HP" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_HP()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label"  width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP
+          " horizontalAlignment="CENTER" text="|cffa500起飞 HP倒数|r: 100%" >
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Landing" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="40" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Landing()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label"  width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP
+          " horizontalAlignment="CENTER" text="|c5cd65c落地 倒计时|r: 8">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP"/>
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Block" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Block()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FF4500" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="格挡">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <!-- <TopLevelControl name="Hts_Flare" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Flare()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FF3300" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cff531aFLARE|r: 0.9">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl> -->
+
+    <TopLevelControl name="Hts_PowerfulSlam" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_PowerfulSlam()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cFF4500奋力强袭|r: 0.9">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <!-- <TopLevelControl name="Hts_HailOfStone" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_HailOfStone()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|ce6ac00Hail of Stones|r x 1">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl> -->
+
+    <TopLevelControl name="Hts_Leap" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Leap()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FF4500" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="风暴之跃">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Spit" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Spit()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cff1493火焰迸射|r: 0.7">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Comet" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-150" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Comet()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|c87ceeb霜冻彗星|r: 1.6">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_MeteorNames" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="120" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-150" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_MeteorNames()
+      </OnMoveStop>
+      <Controls>
+
+        <Label name="$(parent)_Label1" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cff9900@name 远|r">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+
+        <Texture name="$(parent)_Arrow_Far1" textureFile="/HowToSunspire/texture/hts_arrow_far.dds" hidden="false">
+					<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$(parent)_Label1" offsetX="-10" />
+					<Dimensions x="36" y="36" />
+				</Texture>
+
+        <Texture name="$(parent)_Arrow_Far2" textureFile="/HowToSunspire/texture/hts_arrow_far.dds" hidden="false">
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$(parent)_Label1" offsetX="10" />
+					<Dimensions x="36" y="36" />
+				</Texture>
+
+        <Label name="$(parent)_Label2" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cff9900@name 中|r">
+          <Anchor point="TOP" relativeTo="$(parent)_Label1" relativePoint="BOTTOM" offsetY="10" />
+        </Label>
+
+        <Texture name="$(parent)_Arrow_Med1" textureFile="/HowToSunspire/texture/hts_arrow_med_1.dds" hidden="false">
+					<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$(parent)_Label2" offsetX="-10" />
+					<Dimensions x="36" y="36" />
+				</Texture>
+
+        <Texture name="$(parent)_Arrow_Med2" textureFile="/HowToSunspire/texture/hts_arrow_med_2.dds" hidden="false">
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$(parent)_Label2" offsetX="10" />
+					<Dimensions x="36" y="36" />
+				</Texture>
+
+        <Label name="$(parent)_Label3" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cff9900@name 近|r">
+          <Anchor point="TOP" relativeTo="$(parent)_Label2" relativePoint="BOTTOM" offsetY="10"/>
+        </Label>
+
+        <Texture name="$(parent)_Arrow_Close1" textureFile="/HowToSunspire/texture/hts_arrow_close_1.dds" hidden="false">
+					<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$(parent)_Label3" offsetX="-10" />
+					<Dimensions x="36" y="36" />
+				</Texture>
+
+        <Texture name="$(parent)_Arrow_Close2" textureFile="/HowToSunspire/texture/hts_arrow_close_2.dds" hidden="false">
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$(parent)_Label3" offsetX="10" />
+					<Dimensions x="36" y="36" />
+				</Texture>
+
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Thrash" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="100" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Thrash()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|ce51919鞭笞|r: 1.3">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_SoulTear" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="100" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_SoulTear()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|c9966ff灵魂撕裂|r: 2.3">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Atro" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Atro()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FF0000" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="火焰侍灵 刷新！">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Wipe" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="150" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Wipe()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|c8a2be2传送门 倒计时|r: 57">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Storm" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-100" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Storm()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|ce51919火焰风暴 倒计时|r: 7.4">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Geyser" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Geyser()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FF1493" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="熔岩喷涌">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_NextFlare" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-100" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_NextFlare()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|ce51919专注之火 倒计时|r: 12.7">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_NextMeteor" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="150" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_NextMeteor()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cf51414熔火流星 倒计时|r: 9.8">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Negate" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Negate()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="622BF4" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="反魔法力场">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Shield" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Shield()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|c7fffd4盾牌冲锋|r: 0.8">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Cata" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Cata()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|ce51919灾变 倒计时|r: 1.3">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_GlacialFist" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_GlacialFist()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|c99ccff冰川之拳|r: 0.9">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+    <TopLevelControl name="Hts_Stonefist" resizeToFitDescendents="true" mouseEnabled="true" movable="true" clampedToScreen="true" layer="COUNT" tier="PARENT">
+      <Dimensions x="300" y="50" />
+      <Anchor point="CENTER" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="0" offsetY="-50" />
+      <OnMoveStop>
+        HowToSunspire.SaveLoc_Stonefist()
+      </OnMoveStop>
+      <Controls>
+        <Label name="$(parent)_Label" width="200" height="40" font="$(BOLD_FONT)|$(KB_40)|soft-shadow-thick" inheritAlpha="true" color="FFFFFF" wrapMode="TRUNCATE" verticalAlignment="TOP" horizontalAlignment="CENTER" text="|cb38600岩石之拳|r: 0.9">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+
+  </Controls>
+</GuiXml>

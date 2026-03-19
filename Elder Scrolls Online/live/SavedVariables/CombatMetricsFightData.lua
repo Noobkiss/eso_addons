@@ -1,0 +1,4 @@
+CombatMetricsFightDataSV =
+{
+    ["version"] = 19,
+}

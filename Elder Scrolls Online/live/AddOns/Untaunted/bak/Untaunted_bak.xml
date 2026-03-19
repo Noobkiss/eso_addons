@@ -1,0 +1,75 @@
+<GuiXml>
+	<Controls>
+		<!-- 主窗口 -->
+		<TopLevelControl name="Untaunted_TLW" clampedToScreen="true" hidden="true" resizeToFitDescendents="true">
+			<Anchor point="TOPLEFT" />
+			<Controls>
+				<Backdrop name="$(parent)Bg" inherits="ZO_DefaultBackdrop" hidden="true">
+					<Anchor point="TOPLEFT" offsetX="0" offsetY="0" />
+					<Anchor point="BOTTOMRIGHT" offsetX="0" offsetY="0" />
+				</Backdrop>
+			</Controls>
+		</TopLevelControl>
+		
+		<!-- 单个条目的模板 -->
+		<Control name="Untaunted_UnitItemTemplate" virtual="true" resizeToFitDescendents="true">
+			<ResizeToFitPadding width="0" height="0" />
+			<Controls>
+				<!-- 背景 -->
+				<Backdrop name="$(parent)Bg" centerColor="FF1A1A1A" edgeColor="00000000" padding="0,0,0,0">
+					<Dimensions x="226" y="26" />
+					<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$(parent)" offsetX="0" offsetY="0" />
+				</Backdrop>
+				
+				<!-- 上边框 -->
+				<Backdrop name="$(parent)BorderTop" edgeColor="00000000">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)Bg" relativePoint="TOPLEFT" offsetX="0" offsetY="0" />
+					<Anchor point="TOPRIGHT" relativeTo="$(parent)Bg" relativePoint="TOPRIGHT" offsetX="0" offsetY="0" />
+				</Backdrop>
+				
+				<!-- 下边框 -->
+				<Backdrop name="$(parent)BorderBottom" edgeColor="00000000">
+					<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Bg" relativePoint="BOTTOMLEFT" offsetX="0" offsetY="0" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)Bg" relativePoint="BOTTOMRIGHT" offsetX="0" offsetY="0" />
+				</Backdrop>
+				
+				<!-- 左边框 -->
+				<Backdrop name="$(parent)BorderLeft" edgeColor="00000000">
+					<Anchor point="TOPLEFT" relativeTo="$(parent)Bg" relativePoint="TOPLEFT" offsetX="0" offsetY="0" />
+					<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Bg" relativePoint="BOTTOMLEFT" offsetX="0" offsetY="0" />
+				</Backdrop>
+				
+				<!-- 右边框 -->
+				<Backdrop name="$(parent)BorderRight" edgeColor="00000000">
+					<Anchor point="TOPRIGHT" relativeTo="$(parent)Bg" relativePoint="TOPRIGHT" offsetX="0" offsetY="0" />
+					<Anchor point="BOTTOMRIGHT" relativeTo="$(parent)Bg" relativePoint="BOTTOMRIGHT" offsetX="0" offsetY="0" />
+				</Backdrop>
+				
+				<!-- 图标 - 紧贴左边 -->
+				<Texture name="$(parent)Icon" textureFile="/esoui/art/icons/poi/poi_groupboss_complete.dds">
+					<Dimensions x="26" y="26" />
+					<Anchor point="TOPLEFT" offsetX="0" offsetY="0" />
+				</Texture>
+				
+				<!-- 进度条 - 紧贴图标和计时器之间 -->
+				<StatusBar name="$(parent)Bar" color="FF00DD00">
+					<Dimensions x="196" y="24" />
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$(parent)Icon" offsetX="1" offsetY="0" />
+					<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$(parent)Timer" offsetX="-1" offsetY="0" />
+				</StatusBar>
+				
+				<!-- 计时器 - 紧贴背景右边 -->
+				<Label name="$(parent)Timer" horizontalAlignment="RIGHT" verticalAlignment="CENTER" font="ZoFontGameMedium" text="15.0">
+					<Dimensions x="35" y="26" />
+					<Anchor point="RIGHT" relativePoint="RIGHT" relativeTo="$(parent)Bg" offsetX="-2" offsetY="0" />
+				</Label>
+				
+				<!-- 标签 - 填充图标和计时器之间的空间 -->
+				<Label name="$(parent)Label" horizontalAlignment="LEFT" verticalAlignment="CENTER" font="ZoFontGameMedium" wrapMode="TEXT_WRAP_MODE_ELLIPSIS">
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$(parent)Icon" offsetX="2" offsetY="0" />
+					<Anchor point="RIGHT" relativePoint="LEFT" relativeTo="$(parent)Timer" offsetX="-2" offsetY="0" />
+				</Label>
+			</Controls>
+		</Control>
+	</Controls>
+</GuiXml>

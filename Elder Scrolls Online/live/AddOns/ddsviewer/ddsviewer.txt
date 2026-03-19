@@ -1,0 +1,17 @@
+## APIVersion: 100028
+## Title: |cEECA2ADDS Viewer|r v |cFFFFFF0.1|r
+## Description: Display in game dds textures & source.                                              |cFFFFFFCMD|r |c538453/ddsview show|r
+## Author: |cEECA2A@evilwhistle|r
+## Guild: Horned Dragon
+## Version: 0.1
+## SavedVariables: ddsviewer_vars
+## OptionalDependsOn: LibStub LibAddonMenu-1.0
+
+lib/LibStub.lua
+lib/LibAddonMenu-1.0.lua
+lib/LibJSON-1.0.lua
+lib/SortedIteration.lua
+
+ddsviewer.lua
+ddsviewer.xml
+ddsviewerJson.lua

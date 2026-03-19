@@ -1,0 +1,141 @@
+ResearchAssistant_Settings_Server =
+{
+    ["NA Megaserver"] = 
+    {
+        ["@noobkiss"] = 
+        {
+            ["$AccountWide"] = 
+            {
+                ["useAccountWideResearchChars"] = true,
+                ["useLoggedInCharForResearch"] = false,
+                ["allowNoCharsForResearch"] = false,
+                ["showTooltipsArmorWeight"] = false,
+                ["showUntrackedOrnate"] = true,
+                ["bagToPreferencePrioritySorted"] = 
+                {
+                    [1] = 2,
+                    [2] = 6,
+                    [3] = 1,
+                    [4] = 3,
+                    [5] = 7,
+                    [6] = 8,
+                    [7] = 9,
+                    [8] = 10,
+                    [9] = 11,
+                    [10] = 12,
+                    [11] = 13,
+                    [12] = 14,
+                    [13] = 15,
+                    [14] = 16,
+                },
+                ["leatherworkerCharacter"] = 
+                {
+                    [0] = 0,
+                },
+                ["textureSize"] = 16,
+                ["acquiredTraits"] = 
+                {
+                    ["8796093077354797"] = 
+                    {
+                        [20608] = 41501114,
+                        [70209] = 40011069,
+                        [11203] = 41501001,
+                        [20804] = 21503053,
+                        [20805] = 41011113,
+                        [60103] = 31501052,
+                        [60104] = 41501202,
+                        [20105] = 41011137,
+                        [60106] = 41011019,
+                        [20108] = 41501120,
+                        [10702] = 51503036,
+                        [21008] = 41503040,
+                        [20305] = 41011222,
+                        [20308] = 51503043,
+                        [70101] = 41503022,
+                        [70103] = 41011184,
+                        [21208] = 31501130,
+                        [20505] = 41011152,
+                        [60506] = 41011017,
+                        [70109] = 40011070,
+                        [60403] = 41501108,
+                        [21408] = 31501051,
+                        [20705] = 41011148,
+                        [10704] = 31501213,
+                        [60304] = 41501118,
+                        [20708] = 41501123,
+                        [11401] = 41501075,
+                        [10406] = 41011018,
+                        [10903] = 31501067,
+                        [10408] = 31503042,
+                        [11305] = 41011103,
+                        [60501] = 41501119,
+                        [60404] = 41501121,
+                        [20908] = 51503019,
+                        [20205] = 41011136,
+                        [11205] = 41011112,
+                        [11201] = 31501068,
+                        [11005] = 41011105,
+                        [21105] = 41011107,
+                        [60402] = 41501120,
+                        [10803] = 41501002,
+                        [21108] = 41503081,
+                        [20405] = 41011151,
+                        [60406] = 41011024,
+                        [21405] = 41011108,
+                        [21205] = 41011106,
+                        [60204] = 51501194,
+                        [11104] = 20503047,
+                        [11003] = 31501114,
+                        [21308] = 51503045,
+                        [20605] = 41011147,
+                        [10709] = 51503038,
+                        [20808] = 31501218,
+                    },
+                },
+                ["showUntrackedIntricate"] = true,
+                ["canResearchColor"] = "ff3f00ff",
+                ["showTooltips"] = false,
+                ["intricateColor"] = "00ffffff",
+                ["separateSmithing"] = false,
+                ["hideVanillaUIResearchableTexture"] = false,
+                ["jewelryCraftingCharacter"] = 
+                {
+                    [0] = 0,
+                },
+                ["respectItemProtectionByZOs"] = false,
+                ["separateClothier"] = false,
+                ["showTooltipsType"] = false,
+                ["textureOffset"] = 0,
+                ["version"] = 2,
+                ["ornateColor"] = "ffff00ff",
+                ["alreadyResearchedColor"] = "7f7f7fff",
+                ["duplicateUnresearchedColor"] = "ffff00ff",
+                ["showResearched"] = true,
+                ["textureName"] = "Modern",
+                ["blacksmithCharacter"] = 
+                {
+                    [0] = 0,
+                },
+                ["debug"] = false,
+                ["woodworkingCharacter"] = 
+                {
+                    [0] = 0,
+                },
+                ["alwaysShowResearchIcon"] = false,
+                ["skipSetsOnlyMaxLevel"] = false,
+                ["showTraitless"] = true,
+                ["respectItemProtectionByFCOIS"] = false,
+                ["skipSets"] = false,
+                ["alwaysShowResearchIconExcludeNotTracked"] = true,
+                ["clothierCharacter"] = 
+                {
+                    [0] = 0,
+                },
+                ["weaponsmithCharacter"] = 
+                {
+                    [0] = 0,
+                },
+            },
+        },
+    },
+}
